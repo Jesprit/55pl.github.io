@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head> 
+<link rel="stylesheet" href="ring.css" />
+<style type="text/css">
+*,:after,:before{
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+.mk-spinner-wrap{
+  min-height:200px;
+  width:100%;
+  position:relative
+}
+@-webkit-keyframes a{
+  0%{
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg)
+  }
+  to{
+    -webkit-transform:rotate(1turn);
+    transform:rotate(1turn)
+  }
+}
+@keyframes a{
+  0%{
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg)
+  }
+  to{
+    -webkit-transform:rotate(1turn);
+    transform:rotate(1turn)
+  }
+}
+.mk-spinner-ring{
+  content:"";
+  display:inline-block;
+  position:absolute;
+  width:50px;
+  height:50px;
+  top:50%;
+  margin-top:-25px;
+  left:50%;
+  margin-left:-25px;
+  z-index:1;
+  border-radius:50%;
+  border:3px solid #00bcd4;
+  border-left-color:transparent;
+  background:transparent;
+  -webkit-animation:a 1s infinite linear;
+  animation:a 1s infinite linear
+}
+
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script>
+var random = new Array();
+random[0]="https://t.me/joyapk/57";
+random[1]="https://t.me/joyapk/58";
+random[2]="https://t.me/joyapk/59";
+random[3]="https://t.me/joyapk/60";
+random[4]="https://t.me/joyapk/61";
+random[5]="https://t.me/joyapk/62";
+random[6]="https://t.me/joyapk/63";
+random[7]="https://t.me/joyapk/64";
+random[8]="https://t.me/joyapk/65";
+random[9]="https://t.me/joyapk/66";
+random[10]="https://t.me/joyapk/67";
+random[11]="https://t.me/joyapk/68";
+random[12]="https://t.me/joyapk/69";
+random[13]="https://t.me/joyapk/70";
+random[14]="https://t.me/joyapk/71";
+random[15]="https://t.me/joyapk/72";
+random[16]="https://t.me/joyapk/73";
+random[17]="https://t.me/joyapk/74";
+random[18]="https://t.me/joyapk/75";
+random[19]="https://t.me/joyapk/76";
+random[20]="https://t.me/joyapk/77";
+random[21]="https://t.me/joyapk/78";
+random[22]="https://t.me/joyapk/79";
+random[23]="https://t.me/joyapk/80";
+random[24]="https://t.me/joyapk/81";
+random[25]="https://t.me/joyapk/82";
+random[26]="https://t.me/joyapk/83";
+random[27]="https://t.me/joyapk/84";
+random[28]="https://t.me/joyapk/85";
+random[29]="https://t.me/joyapk/86";
+random[30]="https://t.me/joyapk/87";
+random[31]="https://t.me/joyapk/88";
+random[32]="https://t.me/joyapk/89";
+random[33]="https://t.me/joyapk/90";
+random[34]="https://t.me/joyapk/91";
+random[35]="https://t.me/joyapk/92";
+random[36]="https://t.me/joyapk/93";
+random[37]="https://t.me/joyapk/94";
+random[38]="https://t.me/joyapk/95";
+random[39]="https://t.me/joyapk/96";
+random[40]="https://t.me/joyapk/97";
+random[41]="https://t.me/joyapk/98";
+random[42]="https://t.me/joyapk/99";
+random[43]="https://t.me/joyapk/100";
+random[44]="https://t.me/joyapk/101";
+random[45]="https://t.me/joyapk/102";
+random[46]="https://t.me/joyapk/103";
+random[47]="https://t.me/joyapk/104";
+random[48]="https://t.me/joyapk/105";
+random[49]="https://t.me/joyapk/106";
+random[50]="https://t.me/joyapk/107";
+random[51]="https://t.me/joyapk/108";
+random[52]="https://t.me/joyapk/109";
+random[53]="https://t.me/joyapk/110";
+random[54]="https://t.me/joyapk/111";
+random[55]="https://t.me/joyapk/112";
+random[56]="https://t.me/joyapk/113";
+random[57]="https://t.me/joyapk/114";
+random[58]="https://t.me/joyapk/115";
+random[59]="https://t.me/joyapk/116";
+random[60]="https://t.me/joyapk/117";
+random[61]="https://t.me/joyapk/118";
+random[62]="https://t.me/joyapk/119";
+random[63]="https://t.me/joyapk/120";
+random[64]="https://t.me/joyapk/121";
+random[65]="https://t.me/joyapk/122";
+random[66]="https://t.me/joyapk/123";
+random[67]="https://t.me/joyapk/124";
+random[68]="https://t.me/joyapk/125";
+random[69]="https://t.me/joyapk/126";
+random[70]="https://t.me/joyapk/127";
+random[71]="https://t.me/joyapk/128";
+random[72]="https://t.me/joyapk/129";
+random[73]="https://t.me/joyapk/130";
+random[74]="https://t.me/joyapk/131";
+random[75]="https://t.me/joyapk/132";
+random[76]="https://t.me/joyapk/133";
+random[77]="https://t.me/joyapk/134";
+random[78]="https://t.me/joyapk/135";
+random[79]="https://t.me/joyapk/136";
+random[80]="https://t.me/joyapk/137";
+random[81]="https://t.me/joyapk/138";
+random[82]="https://t.me/joyapk/139";
+random[83]="https://t.me/joyapk/140";
+random[84]="https://t.me/joyapk/141";
+random[85]="https://t.me/joyapk/142";
+random[86]="https://t.me/joyapk/143";
+random[87]="https://t.me/joyapk/144";
+random[88]="https://t.me/joyapk/145";
+random[89]="https://t.me/joyapk/146";
+random[90]="https://t.me/joyapk/147";
+random[91]="https://t.me/joyapk/148";
+random[92]="https://t.me/joyapk/149";
+random[93]="https://t.me/joyapk/150";
+random[94]="https://t.me/joyapk/151";
+random[95]="https://t.me/joyapk/152";
+random[96]="https://t.me/joyapk/153";
+random[97]="https://t.me/joyapk/154";
+random[98]="https://t.me/joyapk/155";
+random[99]="https://t.me/joyapk/156";
+random[100]="https://t.me/joyapk/157";
+random[101]="https://t.me/joyapk/158";
+random[102]="https://t.me/joyapk/159";
+random[103]="https://t.me/joyapk/160";
+random[104]="https://t.me/joyapk/161";
+random[105]="https://t.me/joyapk/162";
+random[106]="https://t.me/joyapk/163";
+random[107]="https://t.me/joyapk/164";
+random[108]="https://t.me/joyapk/165";
+random[109]="https://t.me/joyapk/166";
+random[110]="https://t.me/joyapk/167";
+random[111]="https://t.me/joyapk/168";
+random[112]="https://t.me/joyapk/169";
+random[113]="https://t.me/joyapk/170";
+random[114]="https://t.me/joyapk/171";
+random[115]="https://t.me/joyapk/172";
+random[116]="https://t.me/joyapk/173";
+random[117]="https://t.me/joyapk/174";
+random[118]="https://t.me/joyapk/175";
+random[119]="https://t.me/joyapk/176";
+random[120]="https://t.me/joyapk/177";
+random[121]="https://t.me/joyapk/178";
+random[122]="https://t.me/joyapk/179";
+random[123]="https://t.me/joyapk/180";
+random[124]="https://t.me/joyapk/181";
+random[125]="https://t.me/joyapk/182";
+random[126]="https://t.me/joyapk/183";
+random[127]="https://t.me/joyapk/184";
+random[128]="https://t.me/joyapk/185";
+random[129]="https://t.me/joyapk/186";
+random[130]="https://t.me/joyapk/187";
+random[131]="https://t.me/joyapk/188";
+random[132]="https://t.me/joyapk/189";
+random[133]="https://t.me/joyapk/190";
+random[134]="https://t.me/joyapk/191";
+random[135]="https://t.me/joyapk/192";
+random[136]="https://t.me/joyapk/193";
+random[137]="https://t.me/joyapk/194";
+random[138]="https://t.me/joyapk/195";
+random[139]="https://t.me/joyapk/196";
+random[140]="https://t.me/joyapk/197";
+random[141]="https://t.me/joyapk/198";
+random[142]="https://t.me/joyapk/199";
+random[143]="https://t.me/joyapk/200";
+random[144]="https://t.me/joyapk/201";
+random[145]="https://t.me/joyapk/202";
+random[146]="https://t.me/joyapk/203";
+random[147]="https://t.me/joyapk/204";
+random[148]="https://t.me/joyapk/205";
+random[149]="https://t.me/joyapk/206";
+random[150]="https://t.me/joyapk/207";
+random[151]="https://t.me/joyapk/208";
+random[152]="https://t.me/joyapk/209";
+random[153]="https://t.me/joyapk/210";
+random[154]="https://t.me/joyapk/211";
+random[155]="https://t.me/joyapk/212";
+random[156]="https://t.me/joyapk/213";
+random[157]="https://t.me/joyapk/214";
+random[158]="https://t.me/joyapk/215";
+random[159]="https://t.me/joyapk/216";
+random[160]="https://t.me/joyapk/217";
+random[161]="https://t.me/joyapk/218";
+random[162]="https://t.me/joyapk/219";
+random[163]="https://t.me/joyapk/220";
+random[164]="https://t.me/joyapk/221";
+random[165]="https://t.me/joyapk/222";
+random[166]="https://t.me/joyapk/223";
+random[167]="https://t.me/joyapk/224";
+random[168]="https://t.me/joyapk/225";
+random[169]="https://t.me/joyapk/226";
+random[170]="https://t.me/joyapk/227";
+random[171]="https://t.me/joyapk/228";
+random[172]="https://t.me/joyapk/229";
+random[173]="https://t.me/joyapk/230";
+random[174]="https://t.me/joyapk/231";
+random[175]="https://t.me/joyapk/232";
+random[176]="https://t.me/joyapk/233";
+random[177]="https://t.me/joyapk/234";
+random[178]="https://t.me/joyapk/235";
+random[179]="https://t.me/joyapk/236";
+random[180]="https://t.me/joyapk/237";
+random[181]="https://t.me/joyapk/238";
+random[182]="https://t.me/joyapk/239";
+random[183]="https://t.me/joyapk/240";
+random[184]="https://t.me/joyapk/241";
+random[185]="https://t.me/joyapk/242";
+random[186]="https://t.me/joyapk/243";
+random[187]="https://t.me/joyapk/244";
+random[188]="https://t.me/joyapk/245";
+random[189]="https://t.me/joyapk/246";
+random[190]="https://t.me/joyapk/247";
+random[191]="https://t.me/joyapk/248";
+random[192]="https://t.me/joyapk/249";
+random[193]="https://t.me/joyapk/250";
+random[194]="https://t.me/joyapk/251";
+random[195]="https://t.me/joyapk/252";
+random[196]="https://t.me/joyapk/253";
+random[197]="https://t.me/joyapk/254";
+random[198]="https://t.me/joyapk/255";
+random[199]="https://t.me/joyapk/256";
+random[200]="https://t.me/joyapk/257";
+random[201]="https://t.me/joyapk/258";
+random[202]="https://t.me/joyapk/259";
+random[203]="https://t.me/joyapk/260";
+random[204]="https://t.me/joyapk/261";
+random[205]="https://t.me/joyapk/262";
+random[206]="https://t.me/joyapk/263";
+random[207]="https://t.me/joyapk/264";
+random[208]="https://t.me/joyapk/265";
+random[209]="https://t.me/joyapk/266";
+random[210]="https://t.me/joyapk/267";
+random[211]="https://t.me/joyapk/268";
+random[212]="https://t.me/joyapk/269";
+random[213]="https://t.me/joyapk/270";
+random[214]="https://t.me/joyapk/271";
+random[215]="https://t.me/joyapk/272";
+random[216]="https://t.me/joyapk/273";
+random[217]="https://t.me/joyapk/274";
+random[218]="https://t.me/joyapk/275";
+random[219]="https://t.me/joyapk/276";
+random[220]="https://t.me/joyapk/277";
+random[221]="https://t.me/joyapk/278";
+random[222]="https://t.me/joyapk/279";
+random[223]="https://t.me/joyapk/280";
+random[224]="https://t.me/joyapk/281";
+random[225]="https://t.me/joyapk/282";
+random[226]="https://t.me/joyapk/283";
+random[227]="https://t.me/joyapk/284";
+random[228]="https://t.me/joyapk/285";
+random[229]="https://t.me/joyapk/286";
+random[230]="https://t.me/joyapk/287";
+random[231]="https://t.me/joyapk/288";
+random[232]="https://t.me/joyapk/289";
+random[233]="https://t.me/joyapk/290";
+random[234]="https://t.me/joyapk/291";
+random[235]="https://t.me/joyapk/292";
+random[236]="https://t.me/joyapk/293";
+random[237]="https://t.me/joyapk/294";
+random[238]="https://t.me/joyapk/295";
+random[239]="https://t.me/joyapk/296";
+random[240]="https://t.me/joyapk/297";
+random[241]="https://t.me/joyapk/298";
+random[242]="https://t.me/joyapk/299";
+random[243]="https://t.me/joyapk/300";
+random[244]="https://t.me/joyapk/301";
+random[245]="https://t.me/joyapk/302";
+random[246]="https://t.me/joyapk/303";
+random[247]="https://t.me/joyapk/304";
+random[248]="https://t.me/joyapk/305";
+random[249]="https://t.me/joyapk/306";
+random[250]="https://t.me/joyapk/307";
+random[251]="https://t.me/joyapk/308";
+random[252]="https://t.me/joyapk/309";
+random[253]="https://t.me/joyapk/310";
+random[254]="https://t.me/joyapk/311";
+random[255]="https://t.me/joyapk/312";
+random[256]="https://t.me/joyapk/313";
+random[257]="https://t.me/joyapk/314";
+random[258]="https://t.me/joyapk/315";
+random[259]="https://t.me/joyapk/316";
+random[260]="https://t.me/joyapk/317";
+random[261]="https://t.me/joyapk/318";
+random[262]="https://t.me/joyapk/319";
+random[263]="https://t.me/joyapk/320";
+random[264]="https://t.me/joyapk/321";
+</script>
+
+<script type="text/javascript"> 
+function funonload() {
+window.location = random[Math.floor(Math.random() * random.length)];
+}
+window.onload = funonload;
+</script>
+<meta charset="utf-8">
+<title>Рандомная игра от JoyApk</title>
+</head>
+<body>
+  <div class="mk-spinner-wrap">
+          <div class="mk-spinner-ring"></div>
+        </div>
+ 
+</body>
+</html>
+
+
+
+
+
